@@ -1,6 +1,7 @@
-rrequire_relative '../lib/fizzbuzz'
+require_relative '../lib/fizzbuzz.rb'
 
-describe 'fizzbuzz'
+describe 'fizzbuzz'do
+
   it 'returns 1 when passed 1' do
     expect(fizzbuzz(1)).to eq 1
   end
@@ -24,5 +25,5 @@ describe 'fizzbuzz'
   it 'returns 11 when passed 11' do
     expect(fizzbuzz(11)).to eq 11
   end
-
+  
 end
