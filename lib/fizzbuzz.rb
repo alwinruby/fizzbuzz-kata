@@ -1,11 +1,11 @@
-def fizzbuzz(n)
-  if n % 5 == 0 and n % 3 == 0
+def fizzbuzz(number)
+  if number % 5 == 0 and number % 3 == 0
     "fizzbuzz"
-  elsif n % 5 == 0
+  elsif number % 5 == 0
     "buzz"
-  elsif n % 3 == 0
+  elsif number % 3 == 0
     "fizz"
   else
-    n
+    number
   end
 end
