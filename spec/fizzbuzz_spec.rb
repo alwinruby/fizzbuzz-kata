@@ -1,60 +1,54 @@
-require_relative '../lib/fizzbuzz.rb'
+require_relative '../lib/fizzbuzz'
 
-describe 'fizzbuzz' do
+describe 'FizzBuzz' do
 
-  it 'returns 1 when passed 1' do
-    expect(fizzbuzz(1)).to eq 1
+  context 'knows that a number is divisible by' do
+    it '3' do
+      expect(is_divisible_by_three?(3)).to eq true
+    end
+
+    it '5' do
+      expect(is_divisible_by_five?(5)).to eq true
+    end
+
+    it '15' do
+      expect(is_divisible_by_fifteen?(15)).to eq true
+    end
+
   end
 
-  it 'returns fizz when passed 3' do
-    expect(fizzbuzz(3)).to eq 'fizz'
+  context 'knows that a number is not divisible by' do
+    it '3' do
+      expect(is_divisible_by_three?(1)).to eq false
+    end
+
+    it '5' do
+      expect(is_divisible_by_five?(1)).to eq false
+    end
+
+    it '15' do
+      expect(is_divisible_by_fifteen?(1)).to eq false
+    end
   end
 
-  it 'returns 4 when passed 4' do
-    expect(fizzbuzz(4)).to eq 4
+  context 'while playing the game it returns' do
+
+    it 'Fizz' do
+      expect(fizzbuzz(3)).to eq 'Fizz'
+    end
+
+    it 'Buzz' do
+      expect(fizzbuzz(5)).to eq 'Buzz'
+    end
+
+    it 'FizzBuzz' do
+      expect(fizzbuzz(15)).to eq 'FizzBuzz'
+    end
+
+    it 'returns the number when not diviable by 3, 5 and 15' do
+      expect(fizzbuzz(1)).to eq 1
+    end
+
   end
 
-  it 'returns buzz when passed 5' do
-    expect(fizzbuzz(5)).to eq 'buzz'
-  end
-
-  it 'returns fizz when passed 6' do
-    expect(fizzbuzz(6)).to eq 'fizz'
-  end
-
-  it 'returns 7 when passed 7' do
-    expect(fizzbuzz(7)).to eq 7
-  end
-
-  it 'returns fizzbuzz when passed 15' do
-    expect(fizzbuzz(15)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizzbuzz when passed 30' do
-    expect(fizzbuzz(30)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizzbuzz when passed 45' do
-    expect(fizzbuzz(45)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizzbuzz when passed 60' do
-    expect(fizzbuzz(60)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizzbuzz when passed 75' do
-    expect(fizzbuzz(75)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizzbuzz when passed 90' do
-    expect(fizzbuzz(90)).to eq 'fizzbuzz'
-  end
-
-  it 'returns fizz when passed 99' do
-    expect(fizzbuzz(99)).to eq 'fizz'
-  end
-
-  it 'returns buzz when passed 100' do
-    expect(fizzbuzz(100)).to eq 'buzz'
-  end
 end
