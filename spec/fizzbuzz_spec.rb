@@ -1,4 +1,4 @@
-require_relative '../lib/fizzbuzz'
+require 'fizzbuzz'
 
 describe 'FizzBuzz' do
 
