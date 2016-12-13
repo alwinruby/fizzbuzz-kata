@@ -11,6 +11,7 @@ When a number is divisible by 3 and 5 (or 15)- Say FizzBuzz.
 
 Approach - TDD
 Split into smaller parts
+
 1. Is the number divisible by 3, 5 or 15? Or Not?
 
 2. Write Test - context - is number divisible by 3?
