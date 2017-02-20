@@ -1,6 +1,6 @@
-Fizzbuzz kata
+FizzBuzz kata
 
-Fizz buzz on and on and on and on
+Fizz Buzz on and on and on and on
 
 Rules
 Count up 1 at a time to 100.
