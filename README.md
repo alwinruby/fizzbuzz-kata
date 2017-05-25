@@ -122,7 +122,7 @@ Split into smaller parts
 
 55. Run test - Fail
 
-56. 52. Add to method return Buzz if number is divisible by 5.
+56. Add to method return Buzz if number is divisible by 5.
 
 57. Run test - Pass
 
