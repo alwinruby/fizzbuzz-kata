@@ -12,6 +12,10 @@ describe 'FizzBuzz' do
       expect(is_divisible_by_five?(5)).to eq true
     end
 
+    it '15' do
+      expect(is_divisible_by_fifteen?(15)).to eq true
+    end
+
   end
 
   context 'knows that a number is not divisible by' do
