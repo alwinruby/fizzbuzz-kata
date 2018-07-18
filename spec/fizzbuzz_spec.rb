@@ -28,6 +28,10 @@ describe 'FizzBuzz' do
       expect(is_divisible_by_five?(2)).to eq false
     end
 
+    it '15' do
+      expect(is_divisible_by_fifteen?(4)).to eq false
+    end
+
   end
 
 end
