@@ -34,4 +34,10 @@ describe 'FizzBuzz' do
 
   end
 
+  context 'while playingFizzBuzz' do
+    it 'the number' do
+      expect(fizzbuzz(1)).to eq  1
+    end
+  end
+
 end
